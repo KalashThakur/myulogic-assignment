@@ -1,0 +1,32 @@
+.container > div{
+    /* display: flex; */
+    /* border: 2px solid black; */
+}
+
+body{
+    background-color: #00a69c;
+}
+
+.container > div:first-child{
+    margin-bottom: 40px;
+    padding: 50px;
+}
+
+.container > div:last-child{
+   justify-content: left;
+   font-size: 20px;
+}
+
+h3,span{
+    color: white;
+    font-weight: bold;
+}
+
+img{
+    height: 300px;
+    width: 300px;
+}
+
+input{
+    cursor: pointer;
+}
