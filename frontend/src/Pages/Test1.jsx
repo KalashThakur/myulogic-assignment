@@ -9,6 +9,21 @@ const Test1 = () => {
 
    let count=0
 
+  useEffect(() => {
+    getData();
+  }, []);
+
+  let getData = async () => {
+    try {
+      let res = await fetch("/user");
+      let data = await res.json();
+      console.log('data:', data)
+      setAns(data);
+    } catch (err) {
+      console.log("err: ", err);
+    }
+  };
+
     const handleSelect = (e) => {
         setAns(e.target.value)
         if(ans == 89){
